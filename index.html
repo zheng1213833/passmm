@@ -362,8 +362,17 @@
             </div>
             <div class="plugin-allbox">
               <div data-key="Input_12" class="dplugin-box" style="margin-top: 0px; margin-bottom: 0px; text-align: center;">
-                <div class="dplugin-mobile dplugin-mobile-dinput dinput-vie dplugin-mobile-dinput-focusalert" style="font-size: 18px; font-family: 微软雅黑; font-weight: bold; font-style: normal; color: #008000; text-decoration: none; text-align: center; line-height: 20px; letter-spacing: 0px; --darkreader-inline-color:#008000;" data-darkreader-inline-color=""><span style="font-size: 18px; font-family: 微软雅黑; font-weight: bold; font-style: normal; color: #008000; text-decoration: none; text-align: center; line-height: 20px; letter-spacing: 0px; --darkreader-inline-color:#008000;" data-darkreader-inline-color="">允许出校</span></div>
+                <div class="dplugin-mobile dplugin-mobile-dinput dinput-vie dplugin-mobile-dinput-focusalert" style="font-size: 18px; font-family: 微软雅黑; font-weight: bold; font-style: normal; color: #008000; text-decoration: none; text-align: center; line-height: 20px; letter-spacing: 0px; --darkreader-inline-color:#008000;" data-darkreader-inline-color=""><span id="infos" style="font-size: 18px; font-family: 微软雅黑; font-weight: bold; font-style: normal; color: #008000; text-decoration: none; text-align: center; line-height: 20px; letter-spacing: 0px; --darkreader-inline-color:#008000;" data-darkreader-inline-color=""></span></div>
               </div>
+              <script>
+ var i=1;
+ document.getElementById("infos").innerHTML ="允许出校";
+ function exchange(){
+ i=i^1;
+ if(i==1){document.getElementById("infos").innerHTML ="允许出校";}
+ else{document.getElementById("infos").innerHTML ="允许入校" ;}
+ }
+                </script>
             </div>
           </div>
           <div class="">
@@ -486,7 +495,7 @@ mytime();
         <!---->
       </div>
       <div class="wxformbtn m_start_btn">
-        <button class="draftdiv active" onclick="showLegalNotices()">
+        <button class="draftdiv active" onclick="exchange()">
           更多
         </button>
         <div class="wxformbtn_center">
